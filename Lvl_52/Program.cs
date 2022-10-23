@@ -38,7 +38,7 @@ double[] arr = new double[matrix.GetLength(1)];
     {
         for (int j = 0; j < matrix.GetLength(1); j++)    
         {
-            arr[j] += Math.Round(matrix[i, j] / Convert.ToDouble(matrix.GetLength(0)), 2, MidpointRounding.AwayFromZero);
+            arr[j] += Math.Round(matrix[i, j] / Convert.ToDouble(matrix.GetLength(0)), 1, MidpointRounding.AwayFromZero);
         }
     }
 
@@ -57,7 +57,7 @@ void PrintArray(double[] arr)
 }
 
 
-int[,] array2D = CreateMatrixRndInt(9, 9, 1, 10);
+int[,] array2D = CreateMatrixRndInt(3, 3, 1, 10);
 PrintMatrix(array2D);
 Console.WriteLine();
 double[] arrOf = MidleArifmetic(array2D);
