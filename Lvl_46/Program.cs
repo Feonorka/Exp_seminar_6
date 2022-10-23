@@ -14,7 +14,7 @@ System.Console.WriteLine(Method()[0]);
 // 5 -2 33 -2
 // 77 3 8 1
 
-// Создание одномерного массива
+// Создание одномерного массива 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] array = new int[size];
